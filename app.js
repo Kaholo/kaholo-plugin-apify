@@ -7,6 +7,9 @@ async function retrieveDatasetItem(action, settings) {
         offset: parseInt(action.params.offset || 0),
         apifyToken: parsers.string(action.params.APIFY_TOKEN) || settings.APIFY_TOKEN
     };
+
+    if (!params.apifyToken) throw `Token was not provided`
+
     const datasetResponse = await getDataset(params);
     if (datasetResponse.status !== 200) {
         throw "Unable to connect to dataset";

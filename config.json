@@ -33,8 +33,7 @@
           "type": "vault",
           "description": "The Apify access token to connect to Apify",
           "placeholder": "apify_api_VqMdpa5Y2sPGED6uk3tXm513ZXbrs60UJaxM",
-          "learnUrl": "https://docs.apify.com/api/v2#/introduction/authentication",
-          "required": true
+          "learnUrl": "https://docs.apify.com/api/v2#/introduction/authentication"
         },
         {
           "name": "datasetId",
