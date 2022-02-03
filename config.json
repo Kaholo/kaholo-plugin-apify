@@ -1,5 +1,6 @@
 {
   "name": "Apify",
+  "viewName": "Apify",
   "type": "executer",
   "main": "app.js",
   "execProgram": "node",
@@ -12,6 +13,11 @@
     "DATABASE",
     "STORAGE"
   ],
+  "keywords": [
+    "apify",
+    "dataset",
+    "items",
+   ],
   "settings": [
     {
       "name": "APIFY_TOKEN",
@@ -31,7 +37,7 @@
           "name": "APIFY_TOKEN",
           "viewName": "Apify Token",
           "type": "vault",
-          "description": "The Apify access token to connect to Apify",
+          "description": "The default Apify access token to connect to Apify",
           "placeholder": "apify_api_VqMdpa5Y2sPGED6uk3tXm513ZXbrs60UJaxM",
           "learnUrl": "https://docs.apify.com/api/v2#/introduction/authentication"
         },
@@ -49,7 +55,7 @@
           "viewName": "Offset",
           "type": "string",
           "placeholder": "0",
-          "description": "Index of item to be retreived from dataset. It starts with 0",
+          "description": "Index of item to be retreived from dataset. Default value is 0.",
           "learnUrl": "https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items"
         }
       ]
